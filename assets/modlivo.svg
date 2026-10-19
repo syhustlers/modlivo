@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Modlivo logo</title>
+<style>
+body{margin:0;display:grid;place-items:center;background:#07090d;min-height:100vh}.logo{width:180px;height:180px;border-radius:28px;background:linear-gradient(135deg,#d8ff7c,#5de9ff 52%,#8d62ff);box-shadow:0 0 30px rgba(77,231,255,.25)}
+</style>
+</head>
+<body>
+<div class="logo" aria-label="Modlivo logo"></div>
+</body>
+</html>

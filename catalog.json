@@ -1,0 +1,317 @@
+[
+  {
+    "name": "GTA V",
+    "category": "Action",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
+    "description": "",
+    "slug": "gta-v"
+  },
+  {
+    "name": "Netflix Premium",
+    "category": "Video",
+    "image": "https://cdn.simpleicons.org/netflix/E50914",
+    "description": "",
+    "slug": "netflix-premium"
+  },
+  {
+    "name": "EA FC 27",
+    "category": "Sports",
+    "image": "https://i.postimg.cc/wjdS5n7P/ea-sports-fc-27-xbox-series-x-s-xbox-one-microsoft-store-cover.jpg",
+    "description": "",
+    "slug": "ea-fc-27"
+  },
+  {
+    "name": "CapCut Pro",
+    "category": "Video",
+    "image": "https://i.postimg.cc/7YCxQvPP/file-00000000aec0821199fcbc100432720a.png",
+    "description": "",
+    "slug": "capcut-pro"
+  },
+  {
+    "name": "Red Dead Redemption 2",
+    "category": "Adventure",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
+    "description": "",
+    "slug": "red-dead-redemption-2"
+  },
+  {
+    "name": "YouTube Vanced",
+    "category": "Video",
+    "image": "https://cdn.simpleicons.org/youtube/FF0000",
+    "description": "",
+    "slug": "youtube-vanced"
+  },
+  {
+    "name": "Elden Ring",
+    "category": "RPG",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+    "description": "",
+    "slug": "elden-ring"
+  },
+  {
+    "name": "Cyberpunk 2077",
+    "category": "RPG",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
+    "description": "",
+    "slug": "cyberpunk-2077"
+  },
+  {
+    "name": "Battlefield 6",
+    "category": "Shooter",
+    "image": "https://i.postimg.cc/J7DgfRJV/17306-cover.jpg",
+    "description": "",
+    "slug": "battlefield-6"
+  },
+  {
+    "name": "Picsart Ultra",
+    "category": "Photo",
+    "image": "https://cdn.simpleicons.org/picsart/ffffff",
+    "description": "",
+    "slug": "picsart-ultra"
+  },
+  {
+    "name": "Minecraft Dungeons II",
+    "category": "Adventure",
+    "image": "https://i.postimg.cc/8zHnRc8X/minecraft-dungeons-ii-deluxe-edition-pc-xbox-series-x-s-microsoft-store-cover.jpg",
+    "description": "",
+    "slug": "minecraft-dungeons-ii"
+  },
+  {
+    "name": "Marvel Rivals",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2767030/header.jpg",
+    "description": "",
+    "slug": "marvel-rivals"
+  },
+  {
+    "name": "Google AI Ultra",
+    "category": "Utilities",
+    "image": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=256",
+    "description": "",
+    "slug": "google-ai-ultra"
+  },
+  {
+    "name": "THE FINALS",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2073850/header.jpg",
+    "description": "",
+    "slug": "the-finals"
+  },
+  {
+    "name": "Remini AI Pro",
+    "category": "Photo",
+    "image": "https://www.google.com/s2/favicons?domain=remini.ai&sz=256",
+    "description": "",
+    "slug": "remini-ai-pro"
+  },
+  {
+    "name": "Hogwarts Legacy",
+    "category": "Adventure",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg",
+    "description": "",
+    "slug": "hogwarts-legacy"
+  },
+  {
+    "name": "Amazon Music",
+    "category": "Music",
+    "image": "https://img.icons8.com/?size=100&id=3TE5FcLikFfj&format=png&color=000000",
+    "description": "",
+    "slug": "amazon-music"
+  },
+  {
+    "name": "Counter-Strike 2",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg",
+    "description": "",
+    "slug": "counter-strike-2"
+  },
+  {
+    "name": "NordVPN",
+    "category": "Utilities",
+    "image": "https://cdn.simpleicons.org/nordvpn/4687FF",
+    "description": "",
+    "slug": "nordvpn"
+  },
+  {
+    "name": "Lethal Company",
+    "category": "Horror",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1966720/header.jpg",
+    "description": "",
+    "slug": "lethal-company"
+  },
+  {
+    "name": "Truecaller Pro",
+    "category": "Utilities",
+    "image": "https://i.postimg.cc/mg5pXqDx/images.jpg",
+    "description": "",
+    "slug": "truecaller-pro"
+  },
+  {
+    "name": "Titanfall 2",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1237970/header.jpg",
+    "description": "",
+    "slug": "titanfall-2"
+  },
+  {
+    "name": "Higgsfield AI+",
+    "category": "Video",
+    "image": "https://www.google.com/s2/favicons?domain=higgsfield.ai&sz=256",
+    "description": "",
+    "slug": "higgsfield-ai"
+  },
+  {
+    "name": "Phasmophobia",
+    "category": "Horror",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/739630/header.jpg",
+    "description": "",
+    "slug": "phasmophobia"
+  },
+  {
+    "name": "Delta Force",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2507950/header.jpg",
+    "description": "",
+    "slug": "delta-force"
+  },
+  {
+    "name": "MovieBox Premium",
+    "category": "Video",
+    "image": "https://i.postimg.cc/NFCRs3Zk/images-(2).jpg",
+    "description": "",
+    "slug": "moviebox-premium"
+  },
+  {
+    "name": "BeamNG.drive",
+    "category": "Racing",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/284160/header.jpg",
+    "description": "",
+    "slug": "beamng-drive"
+  },
+  {
+    "name": "TikTok",
+    "category": "Video",
+    "image": "https://cdn.simpleicons.org/tiktok/ffffff",
+    "description": "",
+    "slug": "tiktok"
+  },
+  {
+    "name": "Ready or Not",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1144200/header.jpg",
+    "description": "",
+    "slug": "ready-or-not"
+  },
+  {
+    "name": "Nova Launcher",
+    "category": "Utilities",
+    "image": "https://i.postimg.cc/DZBX5Vv9/images-(3).jpg",
+    "description": "",
+    "slug": "nova-launcher"
+  },
+  {
+    "name": "R.E.P.O.",
+    "category": "Horror",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/3241660/header.jpg",
+    "description": "",
+    "slug": "r-e-p-o"
+  },
+  {
+    "name": "Adobe Premiere Rush",
+    "category": "Video",
+    "image": "https://www.google.com/s2/favicons?domain=adobe.com&sz=256",
+    "description": "",
+    "slug": "adobe-premiere-rush"
+  },
+  {
+    "name": "PEAK",
+    "category": "Adventure",
+    "image": "https://i.postimg.cc/7Lj10rL6/peak-pc-steam-cover.jpg",
+    "description": "",
+    "slug": "peak"
+  },
+  {
+    "name": "Rizzy AI Infinite",
+    "category": "Utilities",
+    "image": "https://i.postimg.cc/gJR76DGz/file-0000000057b4821194f4b70661fc3718.png",
+    "description": "",
+    "slug": "rizzy-ai-infinite"
+  },
+  {
+    "name": "Escape the Backrooms",
+    "category": "Horror",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1943950/header.jpg",
+    "description": "",
+    "slug": "escape-the-backrooms"
+  },
+  {
+    "name": "Schedule I",
+    "category": "Strategy",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/3164500/header.jpg",
+    "description": "",
+    "slug": "schedule-i"
+  },
+  {
+    "name": "VALORANT",
+    "category": "Shooter",
+    "image": "https://cdn.simpleicons.org/valorant/FF4655",
+    "description": "",
+    "slug": "valorant"
+  },
+  {
+    "name": "XDefiant",
+    "category": "Shooter",
+    "image": "https://i.postimg.cc/nr41nSpP/xdefiant-pc-game-cover.jpg",
+    "description": "",
+    "slug": "xdefiant"
+  },
+  {
+    "name": "COD: Modern Warfare 4",
+    "category": "Shooter",
+    "image": "https://i.postimg.cc/ZKzfXp4B/call-of-duty-modern-warfare-4-vault-edition-xbox-series-x-s-pc-microsoft-store-cover.jpg",
+    "description": "",
+    "slug": "cod-modern-warfare-4"
+  },
+  {
+    "name": "Crimson Desert",
+    "category": "Action RPG",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/3321460/header.jpg",
+    "description": "",
+    "slug": "crimson-desert"
+  },
+  {
+    "name": "Operator",
+    "category": "Shooter",
+    "image": "https://i.postimg.cc/mgVpwwd7/operator-pc-steam-cover.jpg",
+    "description": "",
+    "slug": "operator"
+  },
+  {
+    "name": "The Last of Us Part II",
+    "category": "Action Adventure",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2531310/header.jpg",
+    "description": "",
+    "slug": "the-last-of-us-part-ii"
+  },
+  {
+    "name": "Insurgency: Sandstorm",
+    "category": "Shooter",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/581320/header.jpg",
+    "description": "",
+    "slug": "insurgency-sandstorm"
+  },
+  {
+    "name": "Hollow Knight: Silksong",
+    "category": "Adventure",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1030300/header.jpg",
+    "description": "",
+    "slug": "hollow-knight-silksong"
+  },
+  {
+    "name": "Canva Pro",
+    "category": "App",
+    "image": "https://www.google.com/s2/favicons?domain=canva.com&sz=128",
+    "description": "",
+    "slug": "canva-pro"
+  }
+]
