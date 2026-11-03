@@ -374,7 +374,7 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
 <p class="ready-copy">Continue to access the download through the campaign configured for this item.</p>
 <div class="ready-meta"><span id="lockerItemName">Selected item</span><span class="ready-dot">•</span><span id="lockerDevice">Selected device</span></div>
 <button class="download-now" id="launchLockerBtn" type="button"><span>CONTINUE</span><span class="download-arrow">↗</span></button>
-<p class="small-note">Download will start instantly......</p>
+<p class="small-note">Download will start instantly..!</p>
 </div>
 </div>
 
@@ -390,8 +390,10 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
    Required: name, type, category, version, device, desc, image.
    ========================================================== */
 const items=[
-{name:'GTA V',type:'Game',category:'Action',version:'v2.7.14',device:'Android / iPhone',mod:true,trend:true,rating:'4.9',size:'7.8 GB',desc:'Open-world crime adventure presented in a phone-focused build with tuned assets, controls and a compact mobile package.',tags:['Open World','Action'],image:'https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg'},
+{name:'GTA V',type:'Game',category:'Action',version:'v2.7.14',device:'Android / iPhone',mod:true,trend:true,rating:'4.9',size:'7.8 GB',desc:'Open-world crime adventure presented in a phone-focused build with tuned assets, controls and a compact mobile package.',tags:['Open World','Action'],image:'https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg'},
 
+ {name:'eFootball Offline',type:'Game',category:'Sports',version:'2026',device:'Android',mod:true,trend:true,rating:'4.9',size:'Varies',desc:'Unofficial offline-modified eFootball build listing. This is not an official Konami offline mobile release; verify the build and its safety before downloading.',tags:['Football','Offline'],image:'https://cdn.akamai.steamstatic.com/steam/apps/1665460/header.jpg'},
+ 
 {name:'Netflix Premium',type:'App',category:'Video',version:'v9.18.4',device:'Android / iPhone',mod:true,trend:true,rating:'4.8',size:'182 MB',desc:'Premium-style streaming profile with an enhanced viewing experience and additional playback-focused features.',tags:['Streaming','Entertainment'],image:'https://cdn.simpleicons.org/netflix/E50914'},
 
 {name:'EA FC 27',type:'Game',category:'Sports',version:'v1.3.8',device:'Android / iPhone',mod:false,trend:true,rating:'4.8',size:'6.4 GB',desc:'The latest football experience presented in a phone-focused package with streamlined controls and mobile-ready assets.',tags:['Football','Sports'],image:'https://i.postimg.cc/wjdS5n7P/ea-sports-fc-27-xbox-series-x-s-xbox-one-microsoft-store-cover.jpg'},
@@ -557,6 +559,25 @@ $('#launchLockerBtn').addEventListener('click',()=>{
   if(status)status.textContent='The access script could not load. Please refresh the page and try again.';
  }
 });
+
+// Restore the original rotating hero slides and featured artwork.
+const heroSlides=items.filter(x=>x.trend).slice(0,4);
+let heroIndex=0;
+function setHero(i){
+ if(!heroSlides.length)return;
+ heroIndex=((i%heroSlides.length)+heroSlides.length)%heroSlides.length;
+ const x=heroSlides[heroIndex];
+ const heroImage=$('#heroImage');
+ heroImage.style.backgroundImage=`url("${x.image}")`;
+ $('#heroTitle').textContent=x.name;
+ $('#heroKicker').textContent=x.mod?'Featured mod':'Featured title';
+ $('#heroDesc').textContent=x.desc;
+ $('#heroDots').innerHTML=heroSlides.map((_,n)=>`<button class="hero-dot ${n===heroIndex?'active':''}" data-hero="${n}" aria-label="Slide ${n+1}"></button>`).join('');
+}
+setHero(0);
+setInterval(()=>setHero((heroIndex+1)%heroSlides.length),5200);
+const featureItem=items.find(x=>x.name==='Titanfall 2');
+if(featureItem)$('#featureArt').style.backgroundImage=`url("${featureItem.image}")`;
 
 document.addEventListener('click',e=>{
  const c=e.target.closest('[data-index]');
