@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090d">
+
+  <title>Download &amp; Safety Guide | Modlivo</title>
+  <meta name="description" content="Learn how to use Modlivo's download process, check device compatibility, and stay safe when accessing third-party games and apps.">
+
+  <link rel="canonical" href="https://modlivo.com/download-safety.html">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #07090d;
+      --line: rgba(183,255,60,.16);
+      --lime: #b7ff3c;
+      --cyan: #4de7ff;
+      --text: #edf3f7;
+      --muted: #9aa8b5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 12% 0%, rgba(77,231,255,.08), transparent 34%),
+        radial-gradient(ellipse at 92% 8%, rgba(141,98,255,.10), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--lime);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--cyan);
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 36px));
+      margin: auto;
+    }
+
+    header {
+      padding: 25px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      font: 700 25px 'Space Grotesk', sans-serif;
+      letter-spacing: -1.2px;
+      color: #fff;
+    }
+
+    .brand span {
+      color: var(--lime);
+    }
+
+    .back {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(183,255,60,.05);
+    }
+
+    main {
+      padding: 58px 0 76px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--lime);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--lime);
+      box-shadow: 0 0 14px var(--lime);
+    }
+
+    h1, h2 {
+      font-family: 'Space Grotesk', Inter, sans-serif;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 58px);
+      letter-spacing: -2px;
+      margin: 15px 0 12px;
+    }
+
+    .intro {
+      font-size: 16px;
+      color: #b7c2cc;
+      max-width: 720px;
+      margin: 0 0 30px;
+    }
+
+    .content {
+      display: grid;
+      gap: 15px;
+    }
+
+    section {
+      padding: 23px 24px;
+      border: 1px solid rgba(255,255,255,.075);
+      border-radius: 17px;
+      background: linear-gradient(
+        145deg,
+        rgba(16,24,35,.94),
+        rgba(10,14,20,.94)
+      );
+    }
+
+    h2 {
+      font-size: 20px;
+      letter-spacing: -.4px;
+      margin: 0 0 10px;
+      color: #fff;
+    }
+
+    p {
+      margin: 8px 0;
+      color: #b5c0ca;
+      font-size: 14px;
+    }
+
+    ul, ol {
+      margin: 9px 0 0;
+      padding-left: 21px;
+      color: #b5c0ca;
+      font-size: 14px;
+    }
+
+    li {
+      padding: 4px 0;
+    }
+
+    strong {
+      color: #eaf2f7;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin: 17px 0;
+    }
+
+    .number {
+      flex: 0 0 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(183,255,60,.3);
+      border-radius: 11px;
+      color: var(--lime);
+      font-weight: 800;
+      background: rgba(183,255,60,.06);
+    }
+
+    .step-content {
+      flex: 1;
+    }
+
+    .step-content strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .step-content p {
+      margin: 0;
+    }
+
+    .notice {
+      padding: 17px 19px;
+      border: 1px solid rgba(77,231,255,.2);
+      border-radius: 15px;
+      background: rgba(77,231,255,.055);
+      color: #c9d8e1;
+      font-size: 13px;
+      margin: 26px 0 34px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding: 25px 0 32px;
+      color: #778592;
+      font-size: 12px;
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #aab7c2;
+    }
+
+    .links a:hover {
+      color: var(--lime);
+    }
+
+    @media(max-width:600px) {
+      main {
+        padding: 42px 0 58px;
+      }
+
+      section {
+        padding: 19px;
+      }
+
+      .top {
+        align-items: flex-start;
+      }
+
+      .back {
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="/">modli<span>vo</span></a>
+      <a class="back" href="/">← Back to home</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <div class="eyebrow">
+      <span class="dot"></span>
+      Download responsibly
+    </div>
+
+    <h1>Download &amp; Safety Guide</h1>
+
+    <p class="intro">
+      Your device's safety matters. Here's what to know when browsing
+      Modlivo, selecting a device, and continuing through a third-party
+      download experience.
+    </p>
+
+    <div class="notice">
+      <strong>Stay informed:</strong>
+      Modlivo may connect visitors to third-party services.
+      Always review the source, instructions, and permissions before
+      downloading or installing anything.
+    </div>
+
+    <div class="content">
+
+      <section>
+        <h2>1. How the Modlivo Process Works</h2>
+
+        <div class="step">
+          <div class="number">1</div>
+          <div class="step-content">
+            <strong>Choose an item</strong>
+            <p>
+              Browse the catalog on the Modlivo homepage and select
+              the game or app you're interested in.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="number">2</div>
+          <div class="step-content">
+            <strong>Select your device</strong>
+            <p>
+              Choose the device option that best matches your
+              Android, iOS, or tablet device.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="number">3</div>
+          <div class="step-content">
+            <strong>Continue through the next step</strong>
+            <p>
+              Some download journeys may involve a sponsored
+              third-party content experience. Read its instructions
+              and requirements before participating.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="number">4</div>
+          <div class="step-content">
+            <strong>Follow the provider's instructions</strong>
+            <p>
+              If the third-party provider confirms completion,
+              follow its instructions for the next step.
+              Availability and redirects are controlled by that provider.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Check Device Compatibility</h2>
+
+        <p>
+          Before installing an app or game, check that it is
+          compatible with your device.
+        </p>
+
+        <ul>
+          <li>Check your device's operating system version.</li>
+          <li>Confirm that your device has enough available storage.</li>
+          <li>Review the app's hardware and software requirements.</li>
+          <li>Check whether the download source supports your device and region.</li>
+        </ul>
+
+        <p>
+          Selecting Android, iOS, or Tablet on Modlivo does not
+          guarantee that every listed item will work on every device.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Download Safety Checklist</h2>
+
+        <p>
+          Take a moment to check these points before installing
+          any downloaded file.
+        </p>
+
+        <ul>
+          <li>Use reputable and trusted download sources.</li>
+          <li>Check the file name and file type before opening it.</li>
+          <li>Review requested app permissions carefully.</li>
+          <li>Keep your device operating system updated.</li>
+          <li>Use reliable security protection where available.</li>
+          <li>Avoid files that trigger security warnings or look suspicious.</li>
+          <li>Never share passwords or sensitive account information with unknown websites.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Third-Party Services</h2>
+
+        <p>
+          Certain Modlivo journeys may use external services,
+          including sponsored content providers and content-locker
+          platforms.
+        </p>
+
+        <p>
+          These services are operated independently. Their requirements,
+          available tasks, privacy practices, and redirects are outside
+          Modlivo's direct control.
+        </p>
+
+        <p>
+          Before continuing, read the third-party provider's instructions
+          and review its privacy policy and terms. You can stop if you
+          are uncomfortable with what it requests.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. If Something Goes Wrong</h2>
+
+        <p>
+          If a page does not load, a link fails, or a download does not
+          behave as expected, try the following:
+        </p>
+
+        <ul>
+          <li>Check your internet connection.</li>
+          <li>Reload the page once.</li>
+          <li>Check whether your browser is blocking a required feature.</li>
+          <li>Confirm that the selected device option is correct.</li>
+          <li>Return to the provider's instructions if you were redirected.</li>
+        </ul>
+
+        <p>
+          Do not repeatedly submit personal information or install
+          unfamiliar files to try to fix a failed download.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Important Disclaimer</h2>
+
+        <p>
+          Modlivo is an independently operated website. It does not
+          claim to be the official developer or publisher of third-party
+          games, apps, or services mentioned on the site.
+        </p>
+
+        <p>
+          We do not guarantee the availability, safety, compatibility,
+          or performance of files hosted or provided by independent
+          third parties. Users are responsible for checking downloads
+          before installing them.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Need Help?</h2>
+
+        <p>
+          If you experience a problem with the Modlivo website,
+          contact us and include a short description of the issue.
+          Do not send passwords or other sensitive information.
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:syhustlers@gmail.com">
+            syhustlers@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Instagram:
+          <a href="https://www.instagram.com/syhustler/"
+             target="_blank"
+             rel="noopener noreferrer">
+            @syhustler
+          </a>
+        </p>
+
+        <p>
+          You can also visit our
+          <a href="/contact.html">Contact page</a>
+          for support information.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+
+      <div>
+        © <span id="year">2026</span> Modlivo. Independently operated.
+      </div>
+
+      <nav class="links" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/download-safety.html">Download &amp; Safety</a>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
