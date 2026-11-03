@@ -1,19 +1,28 @@
-# Modlivo static website package
+MODLIVO
+=======
 
-## Included
-- `index.html`: homepage layout and catalog data.
-- `catalog.json`: exported catalog list.
-- `config.js`: deployment config placeholders.
-- `_headers`: Cloudflare header rules.
-- `robots.txt` and `sitemap.xml` for crawlers.
-- `assets/site.css` and `assets/modlivo.svg`.
-- `unlock/`, `privacy/`, `terms/`, `contact/` starter pages.
+Website: https://modlivo.com/
 
-## Deploy
-Upload the contents of this folder to the root of your Cloudflare Pages project.
+Modlivo is a catalog-style website featuring games, apps, and mod-related
+content for visitors to explore.
 
-## Before launch
-1. Configure real download destinations in `config.js`.
-2. Configure a legitimate offer provider URL.
-3. Keep any private keys off the client.
-4. Review the product names, sizes, and app compatibility before publishing.
+PROJECT FILES
+-------------
+index.html              Main homepage
+about.html              About Modlivo
+contact.html            Contact information
+privacy.html             Privacy policy
+terms.html               Terms of use
+download-safety.html     Download and safety information
+robots.txt               Search engine crawling instructions
+sitemap.xml              Sitemap for search engines
+
+IMPORTANT
+---------
+This repository contains the website files used to publish Modlivo.
+Third-party services and content may have their own terms and privacy policies.
+
+CONTACT
+-------
+Email: syhustlers@gmail.com
+Instagram: @syhustler
